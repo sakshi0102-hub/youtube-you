@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Smart Features</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>YouTube Features</h1>
+    <label>
+        <input type="checkbox" id="autopause-toggle" />
+        Enable Autopause
+    </label>
+    <label>
+        <input type="checkbox" id="autoplay-toggle" />
+        Enable Autoplay
+    </label>
+    <label>
+        <input type="checkbox" id="focus-theme-toggle" />
+        Focus Theme (Hide Distractions)
+    </label>
+    <label>
+        <span>Video Speed</span>
+        <input type="range" id="speed-control" min="0.25" max="2" step="0.1" value="1" />
+        <span id="speed-value">1x</span>
+    </label>
+
+    <!-- Save Bookmark Button -->
+    <button id="save-bookmark">Save Bookmark</button>
+
+    <!-- Skip Forward Button -->
+    <button id="skip-forward">Skip Forward</button>
+
+    <!-- Bookmarks Section -->
+    <h2>Bookmarked Videos</h2>
+    <ul id="bookmarks-list"></ul>
+    <button id="clear-all-bookmarks">Clear All Bookmarks</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>

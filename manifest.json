@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Smart Features",
+    "version": "1.0",
+    "description": "Add smart features to YouTube.",
+    "permissions": ["activeTab", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }
+  
